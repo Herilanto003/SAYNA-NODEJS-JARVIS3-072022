@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <title>Api - jarvis</title>
+</head>
+<body>
+    
+    <header class="container-fluid bg-dark mb-4">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <h1>PROJET JARVIS PARTIE 3</h1>
+            </a>
+        </nav>
+    </header>
+    
+    <div class="card bg-primary text-white">
+        <div class="card-body">
+            <h2>VOICI TOUS LES ROUTES DE L' API</h2>
+            <p>On decrit ici tous les routes de l' api, on a classé l' api selon leur route pour faciliter le travail de récuperation</p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+
+        <div class="container">
+            <table class="table table-striped table-bordered">
+              <thead class="thead-dark">
+                <tr>
+                  <th>ROUTE</th>
+                  <th>METHODE</th>
+                  <th>HEADERS</th>
+                  <th>DESCRIPTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>/</td>
+                  <td>GET</td>
+                  <td>{}</td>
+                  <td>Affichage de la page index.html</td>
+                </tr>
+                <tr>
+                  <td>/saynajarvis/login</td>
+                  <td>POST</td>
+                  <td>{}</td>
+                  <td>Route d'authentification d'un utilisateur</td>
+                </tr>
+                <tr>
+                  <td>/saynajarvis/register</td>
+                  <td>POST</td>
+                  <td>{}</td>
+                  <td>Route d'insciption d'un utilisateur</td>
+                </tr>
+                <tr>
+                  <td>/saynajarvis/invitation</td>
+                  <td>POST</td>
+                  <td>{ "Authorization": "Bearer xxxxxx" }</td>
+                  <td>Route invité un utilisateur</td>
+                </tr>
+                <tr>
+                  <td>/saynajarvis/invitation?token=xxx&resp=xxx</td>
+                  <td>GET</td>
+                  <td>{ "Authorization": "Bearer xxxxxx" }</td>
+                  <td>Route gestion d'une invitation</td>
+                </tr>
+                <tr>
+                  <td>/saynajarvis/room</td>
+                  <td>POST</td>
+                  <td>{ "Authorization": "Bearer xxxxxx" }</td>
+                  <td>Route de création d'un piece</td>
+                </tr>
+                <tr>
+                  <td>/saynajarvis/room?name=xxxx</td>
+                  <td>DELETE</td>
+                  <td>{ "Authorization": "Bearer xxxxxx" }</td>
+                  <td>Route de supression d'un piece</td>
+                </tr>
+                <tr>
+                  <td>/saynajarvis/object</td>
+                  <td>POST</td>
+                  <td>{ "Authorization": "Bearer xxxxxx" }</td>
+                  <td>Route de création d'un object</td>
+                </tr>
+                <tr>
+                  <td>/saynajarvis/object?name=xxx</td>
+                  <td>DELETE</td>
+                  <td>{ "Authorization": "Bearer xxxxxx" }</td>
+                  <td>Route de supression d'un object</td>
+                </tr>
+                <tr>
+                  <td>/saynajarvis/object</td>
+                  <td>PUT</td>
+                  <td>{ "Authorization": "Bearer xxxxxx" }</td>
+                  <td>Route de changement d'un object</td>
+                </tr>
+                <tr>
+                  <td>/saynajarvis/user?name=xxxx</td>
+                  <td>DELETE</td>
+                  <td>{ "Authorization": "Bearer xxxxxx" }</td>
+                  <td>Route de suppression du compte</td>
+                </tr>   
+              </tbody>
+            </table>
+          </div>
+
+    </div>
+
+</body>
+</html>
